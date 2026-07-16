@@ -342,7 +342,7 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
           <h2><i class="fas fa-star"></i>Highlights</h2>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
             <div style="background:var(--green-l);border:1px solid #A8D5BB;border-radius:8px;padding:16px">
-              <div style="font-size:22px;font-weight:700;color:var(--green-d)">IF 16.3</div>
+              <div style="font-size:22px;font-weight:700;color:var(--green-d)">IF 18</div>
               <div style="font-size:12px;color:var(--green-d);margin-top:2px">Highest impact factor publication</div>
               <div style="font-size:11px;color:var(--soft);margin-top:6px">Renewable &amp; Sustainable Energy Reviews, 2026</div>
             </div>
@@ -474,25 +474,25 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
 <script>
 // ── DATA ─────────────────────────────────────────────────────
 const PUBS = [
-  {id:'J4',type:'q1',year:2026,if:16.3,status:'Published',
+  {id:'J4',type:'q1',year:2026,if:18,status:'Published',
    title:'Fractional-Order Techniques in Renewable Energy Microgrids: A Comprehensive Survey of Modeling, Control, and Forecasting Methods',
    authors:'S. M. Elnady, J. M. Guerrero, K. Louassaa, A. Azeem, X. Zhang, M. H. Alham, G. Wang, and <strong>A. E. Khalil</strong>',
    journal:'Renewable and Sustainable Energy Reviews',details:'Vol. 239, Art. 117148, 2026',
    doi:'10.1016/j.rser.2026.117148',
    abstract:'A comprehensive survey covering fractional-order techniques for modeling, control, and forecasting in renewable energy microgrids. Reviews FO-ECM modeling, FOPID/TID/FPTID controllers, and FO-based forecasting using PRISMA methodology. International collaboration with Aalborg University (Denmark), HITSZ, SZU, and Cairo University.'},
-  {id:'J3',type:'q1',year:2024,if:9.5,status:'Published',
+  {id:'J3',type:'q1',year:2024,if:10.7,status:'Published',
    title:'A novel multi-objective tuning formula for load frequency controllers in an isolated low-inertia microgrid incorporating PV/wind/FC/BESS',
    authors:'<strong>A. Elsawy Khalil</strong>, T. A. Boghdady, M. H. Alham, and D. K. Ibrahim',
    journal:'Journal of Energy Storage',details:'Vol. 82, pp. 110606, 2024',
    doi:'10.1016/j.est.2024.110606',
    abstract:'Proposes a novel multi-objective tuning formula for load frequency controllers in an isolated low-inertia microgrid with PV, wind, fuel cells, and battery energy storage. Achieves superior frequency deviation minimization while maintaining robust stability across diverse operating conditions.'},
-  {id:'J2',type:'q1',year:2024,if:6.0,status:'Published',
+  {id:'J2',type:'q1',year:2024,if:6.3,status:'Published',
    title:'A novel cascade-loop controller for load frequency control of isolated microgrid via dandelion optimizer',
    authors:'<strong>A. Elsawy Khalil</strong>, T. A. Boghdady, M. H. Alham, and D. K. Ibrahim',
    journal:'Ain Shams Engineering Journal',details:'Vol. 15, Issue 3, pp. 102526, 2024',
    doi:'10.1016/j.asej.2023.102526',
    abstract:'Presents a novel fractional-order cascaded loop controller for load frequency control in isolated microgrids, optimized using the Dandelion Optimizer algorithm. The cascade architecture provides superior disturbance rejection compared to conventional single-loop structures.'},
-  {id:'J1',type:'q2',year:2023,if:3.9,status:'Published',
+  {id:'J1',type:'q2',year:2023,if:4.2,status:'Published',
    title:'Enhancing the Conventional Controllers for Load Frequency Control of Isolated Microgrids Using Proposed Multi-Objective Formulation via Artificial Rabbits Optimization Algorithm',
    authors:'<strong>A. E. Khalil</strong>, T. A. Boghdady, M. H. Alham, and D. K. Ibrahim',
    journal:'IEEE Access',details:'Vol. 11, pp. 3472–3493, 2023',
@@ -572,9 +572,9 @@ const RESEARCH_PROJECTS = [
   {title:'Sigmoid-Based Adaptive PID & FPID Controllers (SPID/SFPID)',period:'2025–Present',
    desc:'Design and mathematical validation of sigmoid-based variable-structure PID and fractional-PID controllers for combined LFC+AVR. Uses Improved Grey Wolf Optimizer (I-GWO). Includes fair-bound comparison methodology against published controllers.',tag:'Active'},
   {title:'Fractional-Order Control for Low-Inertia Isolated Microgrids',period:'2020–Present',
-   desc:'Cascaded fractional-order PID controllers for LFC in isolated microgrids with PV, wind, fuel cells, and BESS. Multi-objective optimization using dandelion optimizer and artificial rabbits optimizer. Published in Q1 journals (IF 6.0, IF 9.5).',tag:'Published'},
+   desc:'Cascaded fractional-order PID controllers for LFC in isolated microgrids with PV, wind, fuel cells, and BESS. Multi-objective optimization using dandelion optimizer and artificial rabbits optimizer. Published in Q1 journals (IF 6.0, IF 10.7).',tag:'Published'},
   {title:'Comprehensive Survey: FO Techniques in Renewable Energy Microgrids',period:'2024–2026',
-   desc:'International survey spanning FO modeling, control, and forecasting. PRISMA methodology. Collaboration with Prof. J.M. Guerrero (Aalborg), HITSZ, SZU, Zhejiang University. Published in RSER (Q1, IF 16.3).',tag:'Published — RSER IF 16.3'},
+   desc:'International survey spanning FO modeling, control, and forecasting. PRISMA methodology. Collaboration with Prof. J.M. Guerrero (Aalborg), HITSZ, SZU, Zhejiang University. Published in RSER (Q1, IF 18).',tag:'Published — RSER IF 18'},
   {title:'LLM-Enhanced Deep Reinforcement Learning for Voltage Control',period:'2025–Present',
    desc:'Integration of large language models with DRL agents for real-time voltage control in active distribution networks. Joint work between HITSZ and Zhejiang University. Currently in 2nd round of Q1 review.',tag:'Under Review — Q1'},
   {title:'Techno-Economic Analysis of Hybrid Microgrids',period:'2023–2024',
@@ -850,7 +850,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   animateCount('s-pubs',7,0,0);
   animateCount('s-q1',3,0,100);
   animateCount('s-conf',7,0,200);
-  animateCount('s-if',16.3,1,300);
+  animateCount('s-if',18,1,300);
   animateCount('s-rev',30,0,400);
   animateCount('s-exp',14,0,500);
 });
